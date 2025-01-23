@@ -1,21 +1,24 @@
 const express = require('express');
-const app = express();
+const router = express.Router();
 
-app.get('/api/cars',(req,res)=>{
+
+router.get('/api/cars',(req,res)=>{
 })
 
-app.get('/api/cars:id',(req,res)=>{
+router.get('/api/cars:id',(req,res)=>{
     req.params.id
 })
 
-app.post('/api/cars',(req,res)=>{
+router.post('/api/cars',(req,res)=>{
 
 })
 
-app.put('/api/cars:id',(req,res)=>{
+router.put('/api/cars:id',(req,res)=>{
     req.params.id
 })
 
-app.delete('/api/cars:id',(req,res)=>{
+router.delete('/api/cars:id',(req,res)=>{
     req.params.id
 })
+
+module.exports= router
