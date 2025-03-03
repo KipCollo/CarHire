@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Login Page</title>
+
+   <style>
+      body {
+         font-family: Arial, Helvetica, sans-serif;
+         background-color: #f4f4f4;
+      }
+
+      .login-container {
+         background-color: #fff;
+         max-width: 400px;
+         margin: 100px auto;
+         padding: 20px;
+         border-radius: 5px;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .form-group {
+         margin-bottom: 20px;
+      }
+
+      input {
+         width: 100%;
+         padding: 10px;
+         box-sizing: border-box;
+      }
+      label {
+         display: block;
+         margin-bottom: 5px;
+      }
+      button {
+         background-color: #4caf50;
+         color: #fff;
+         border: none;
+         padding: 10px 20px;
+         border-radius: 3px;
+         cursor: pointer;
+         position: center;
+      }
+
+      .main {
+         text-align: center;
+      }
+   </style>
+</head>
+<body>
+
+   <div class="login-container">
+    <div>
+      <h2 class="main">Online Car Rental System</h2>
+      <p>Please Login to your ACCOUNT.</p>
+    </div>
+
+    <div>
+    <form action="" method="post" target="_blank">
+
+      <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="user@email.com" required>
+     </div>
+
+     <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="password" required>
+     </div>
+
+     <div>
+      <button>Login</button>
+     </div>
+      
+    </form>
+   </div>
+ </div>
+</body>
+</html>
