@@ -1,0 +1,10 @@
+services:
+  ui:
+    build:
+      context: ./ui
+    container_name: react-app
+    ports:
+      - '5173:5173'
+    command: npm run dev -- --host
+    stdin_open: true
+    tty: true
